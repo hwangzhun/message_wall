@@ -1,0 +1,107 @@
+// color
+    @primary-color:#3b73f0;
+    @link-color:#1890ff;
+    @success-color:#22bf87;
+    @warning-color:#f67770;
+    @error-color:#f35248;
+
+// 中性色
+    @gray-1:#ffffff;
+    @gray-2:#fafafa;
+    @gray-3:#f5f5f5;
+    @gray-4:#f0f0f0;
+    @gray-5:#d9d9d9;
+    @gray-6:#bfbfbf;
+    @gray-7:#8c8c8c;
+    @gray-8:#595959;
+    @gray-9:#434343;
+    @gray-10:#262626;
+    @gray-11:#1f1f1f;
+    @gray-12:#141414;
+    @gray-13:#000000;
+
+// 字体
+
+// 大小和行高
+    @font-size-12: 12px;
+    @font-size-14: 14px;
+    @font-size-16: 16px;
+    @font-size-20: 20px;
+    @font-size-24: 24px;
+    @font-size-30: 30px;
+    @font-size-38: 38px;
+    @font-size-46: 46px;
+    @font-size-56: 56px;
+    @font-size-68: 68px;
+
+    @line-height-12: 20px;
+    @line-height-14: 22px;
+    @line-height-16: 24px;
+    @line-height-20: 28px;
+    @line-height-24: 32px;
+    @line-height-30: 38px;
+    @line-height-38: 46px;
+    @line-height-46: 54px;
+    @line-height-56: 64px;
+    @line-height-68: 76px;
+
+// 字重
+    @regular:400;
+    @medium:500;
+    @semibold:600;
+
+// 字体颜色
+    @title-font:#000000E0;
+    @l1-text:#000000E0;
+    @l2-text:#000000A6;
+    @block-text:00000040;
+    @l1-border:#D9D9D9FF;
+    @divid-Line:#0505050F;
+    @bg-font:#F5F5F5FF;
+
+// 间距
+    @space-4: 4px;
+    @space-8: 8px;
+    @space-12: 12px;
+    @space-16: 16px;
+    @space-20: 20px;
+
+//  全局样式
+    body{
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.5;
+        color:@title-font;
+        font-size: @font-size-14;
+        background-color: @bg-font;
+        transition: all 0.3s;
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    p{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    img{
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    input,textarea{
+        outline: none;
+    }
