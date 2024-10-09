@@ -33,6 +33,28 @@
     npm i vue-cli-plugin-style-resources-loader --save-dev
     ```
 
+## 项目中使用 iconfont 的 Symbol JS 方式引入会发生 eslint 报错
+```
+[eslint]
+C:\Users\Cayson\Desktop\GitHub\message_wall\web\src\assets\fonts\iconfont\iconfont.js
+1:4737  error  'e' is assigned to itself  no-self-assign
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+```
+
+- 如果 iconfont.js 是自动生成的文件，你可以忽略对该文件的 ESLint 检查。这样可以避免不必要的错误提示。
+
+    在 iconfont.js 文件的顶部加上以下注释：
+
+    ```javascript
+    /* eslint-disable */
+    ```
+    这将会禁用整个文件的 ESLint 检查。
 
 ## 常用命令
 
