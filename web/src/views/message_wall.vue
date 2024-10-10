@@ -13,7 +13,7 @@ export default {
 <style lang="less" scoped>
 
 .message-wall {
-    height: 2000px;
+    height: 1000px;
 }
 
 </style>

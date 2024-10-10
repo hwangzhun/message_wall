@@ -1,35 +1,16 @@
 <template>
     <div class="message-wall-index">
-        <top-bar></top-bar>
+        <TopBar></TopBar>
         <video src="../assets/video/bg.mp4" autoplay="autoplay" muted="muted" loop="loop" class="bg-video"></video>
         <router-view></router-view>
+        <FooterBar></FooterBar>
     </div>
 </template>
 
-<script>
+<script setup>
 import TopBar from '@/components/TopBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
 
-export default {
-    data() {
-        return {
-            aaa: '',
-        }
-    },
-
-    components: {
-        TopBar,
-    },
-
-    computed: {
-
-    },
-    created() {
-
-    },
-    methods: {
-
-    }
-}
 </script>
 
 <style lang="less">
@@ -40,7 +21,7 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: -1;
     }
 }
 

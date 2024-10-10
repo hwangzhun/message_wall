@@ -1,3 +1,18 @@
+// 响应式
+:root {
+    --small-mobile: 375px;
+    --mobile: 480px;
+    --tablet: 768px;
+    --pad: 1024px;
+    --desktop: 1200px;
+}
+    @small-mobile: 375px;
+    @mobile: 480px;
+    @tablet: 768px;
+    @pad: 1024px;
+    @desktop: 1200px;
+
+
 // color
     @primary-color:#3b73f0;
     @link-color:#1890ff;
@@ -71,11 +86,6 @@
     @transition-1: 0.25s ease;
     @transition-2: 0.5s ease-in-out;
 
-// 响应式
-    @mobile: 480px;
-    @tablet: 768px;
-    @pad: 1024px;
-
 //  全局样式
     body{
         padding: 0px;
@@ -85,7 +95,7 @@
         font-size: @font-size-14;
         background-color: @gray-1;
         transition: all 0.3s;
-        font-family: Avenir, Helvetica, Arial, sans-serif;
+        // font-family: Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }

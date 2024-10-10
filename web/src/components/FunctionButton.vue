@@ -49,7 +49,7 @@ export default {
   min-width: 50px;
   height: 30px;
   border-radius: 15px;
-  padding: 0 12px;
+  padding: 0 14px;
   font-size:  @font-size-14;
 }
 
