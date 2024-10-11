@@ -1,15 +1,15 @@
 <template>
     <div class="message-wall-index">
         <TopBar></TopBar>
-        <video src="../assets/video/bg.mp4" autoplay="autoplay" muted="muted" loop="loop" class="bg-video"></video>
-        <router-view></router-view>
-        <FooterBar></FooterBar>
+        <!-- <video src="../assets/video/bg.mp4" autoplay="autoplay" muted="muted" loop="loop" class="bg-video"></video> -->
+        <!-- <router-view></router-view> -->
+        <FooterBar2></FooterBar2>
     </div>
 </template>
 
 <script setup>
 import TopBar from '@/components/TopBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
+import FooterBar2 from '@/components/FooterBar2.vue';
 
 </script>
 

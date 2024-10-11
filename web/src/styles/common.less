@@ -6,6 +6,15 @@
     --pad: 1024px;
     --desktop: 1200px;
 }
+
+    .show {
+        display: inline;
+    }
+
+    .hide {
+        display: none;
+    }
+
     @small-mobile: 375px;
     @mobile: 480px;
     @tablet: 768px;
@@ -87,22 +96,41 @@
     @transition-2: 0.5s ease-in-out;
 
 //  全局样式
-    body{
-        padding: 0px;
-        margin: 0px;
-        line-height: 1.5;
-        color:@title-font;
-        font-size: @font-size-14;
-        background-color: @gray-1;
-        transition: all 0.3s;
-        // font-family: Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
 
-    p{
-        padding: 0px;
-        margin: 0px;
+    html {
+        line-height: @line-height-14;
+        color:@title-font;
+        font-size: @font-size-14;
+    }
+
+    body{
+        background-color: @gray-1;
+    }
+
+    i {
+        font-size: @font-size-14;
+    }
+
+    a {
+        color: @gray-9;
+        transition: @transition-1;
+        text-decoration: none;
+    
+        &:hover {
+            color: @primary-color;
+            transition: @transition-1;
+        }
     }
 
     li{
@@ -115,13 +143,15 @@
         display: block;
     }
 
-    a{
-        text-decoration: none;
-        &:hover{
-            text-decoration: underline;
-        }
-    }
-
     input,textarea{
         outline: none;
     }
+
+    // iconfont 初始化
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }

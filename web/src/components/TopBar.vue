@@ -130,20 +130,20 @@ onBeforeUnmount(() => {
     background-color: @primary-color;
 }
 
-@media (max-width: @mobile) {
-    .topbar{
-    top: auto;
-    bottom: 0;
-    position: fixed;
-    }
+// @media (max-width: @mobile) {
+//     .topbar{
+//     top: auto;
+//     bottom: 0;
+//     position: fixed;
+//     }
 
-    .logo{
-        width: fit-content;
+//     .logo{
+//         width: fit-content;
 
-        .logo-name {
-        display: none;
-        }
-    }
-}
+//         .logo-name {
+//         display: none;
+//         }
+//     }
+// }
 
 </style>

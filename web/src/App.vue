@@ -16,4 +16,7 @@ export default {
 
 <style lang="less" scoped>
 
+.bx{
+  font-size: @font-size-30;
+}
 </style>

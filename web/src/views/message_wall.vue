@@ -1,6 +1,7 @@
 <template>
     <div class="message-wall">
         <p>message_wall</p>
+
     </div>
 </template>
 

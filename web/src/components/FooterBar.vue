@@ -50,18 +50,19 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 
 div{
-    border: 1px #fff solid;
+    // border: 1px #fff solid;
+    // box-sizing: border-box;
 }
 
 a {
-    font-size: @font-size-16;
+    font-size: @font-size-14;
     color: @gray-8;
     transition: @transition-1;
-    text-decoration: none; /* 去掉默认的下划线 */
-    display: block; /* 如果有多个链接，确保每个链接占据一行 */
+    text-decoration: none;
+    display: block;
 
     &:hover {
         color: #fff;
@@ -73,16 +74,20 @@ a {
     width: auto;
     height: auto;
     background-color: @gray-10;
-    padding: 0 12vw;
 }
 
 .footer-bar-main {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: space-around;
+    align-content: flex-start;
     padding-top: @space-20;
     padding-bottom: @space-20;
     flex-wrap: wrap;
+    margin: 0 12vw;
+}
+
+.info {
+    margin-right: @space-12;
 }
 
 .logo {
@@ -143,7 +148,7 @@ a {
 
 .link {
     color: @gray-8;
-    flex-grow: 1; 
+    margin-right: @space-12;
 }
 
 .link span {
@@ -152,13 +157,21 @@ a {
     font-weight: @semibold;
 }
 
+.link a {
+    margin-top: @space-12;
+}
+
 .qrcode {
-    display: flex;
     color: @gray-8;
 }
 
 .qrcode-info {
     display: flex;
+    margin-top: @space-12;
+}
+
+.wx {
+    margin-right: @space-16;
 }
 
 .wx img {
@@ -171,5 +184,11 @@ a {
 
 .qrcode-name {
     display: block;
+}
+
+@media (min-width: @desktop) {
+    .footer-bar-main {
+        justify-content: flex-start
+    }
 }
 </style>

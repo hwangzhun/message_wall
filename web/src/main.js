@@ -5,6 +5,7 @@ import store from './store'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import 'boxicons/css/boxicons.min.css';
 
 // iconfont
 import './assets/fonts/iconfont/iconfont.js'
