@@ -7,7 +7,7 @@ export const wallType = [
 
     {
         name:'照片墙',
-        slogan:'每张,都罕有,拍下过,记住过,好过拥有。',
+        slogan:'每张,都罕有,拍下过,记住过,好过拥有！',
     }
 ];
 
