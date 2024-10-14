@@ -23,7 +23,7 @@ import FunctionButton from '@/components/FunctionButton.vue';
 // 定义 refs
 const windowWidth = ref(window.innerWidth);
 const buttonSize = ref('base');
-const buttonColor = ref('primary-main');
+const buttonColor = ref('secondary');
 
 // 从 CSS 获取断点值，并转换为数值
 const smallMobile = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--small-mobile').trim(), 10);

@@ -13,6 +13,12 @@ const routes = [
         component: () => import('../views/message_wall.vue') // 加载子组件
       }
     ]
+  },
+
+  {
+    path: '/test',
+    name: 'test',
+    component: () => import('../components/PlaceHolder.vue'), // 加载父组件
   }
 ]
 
@@ -22,3 +28,5 @@ const router = createRouter({
 })
 
 export default router;
+
+// 
