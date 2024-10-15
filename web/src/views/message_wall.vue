@@ -9,7 +9,7 @@
             <span class="label-list" v-for="(e,index) in wallLabel[id]" :key="index" :class="{ 'label-list-active':labelActive==index }" @click="labelSelectNode(index)">{{ e }}</span>
         </div> 
         <div class="message-card-list">
-            <MessageCard></MessageCard>
+            <MessageCard class="message-card" v-for="(e, index) in cardData.data" :key="index"></MessageCard>
         </div>
     </main>
 
@@ -20,9 +20,12 @@
 import { ref } from 'vue';
 import { wallType,wallLabel } from '@/utils/data';
 import MessageCard from '@/components/MessageCard.vue';
+import { cardData } from '../../mock/index'
 
 const id = ref(0);  // 定义 id 为响应式变量
 const labelActive = ref(-1);
+
+// console.log(cardData)
 
 // 定义切换 label 选中的方法
 const labelSelectNode = (e) => labelActive.value = e;  // 将选中的标签值更新为 e
@@ -91,6 +94,16 @@ main {
     border-radius: 2rem;
     transition: @transition-1;
     }
+
+.message-card-list {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap:wrap;
+}
+
+.message-card {
+    margin: @space-12;
+}
 
 </style>
 
