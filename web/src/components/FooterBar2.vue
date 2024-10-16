@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer ref="getFooter">
         <div class="container">
             <div class="main-footer">
                 <div class="profile">
@@ -48,6 +48,9 @@
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Join Us</a></li>
                     </ul>
+
+                    <input v-model="footerDate" @input="updateParentMessage" placeholder="Type a message" />
+
                 </div>
             </div>
             <hr>
@@ -67,6 +70,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+
+const footerDate = ref('我是 footerDate')
+
+const emit = defineEmits(['footerDate']);
+
+const updateParentMessage = () => {
+  emit('updateMessage', footerDate.value);
+};
 
 </script>
 

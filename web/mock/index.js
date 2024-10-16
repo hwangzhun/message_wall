@@ -3,7 +3,7 @@ var Mock = require('mockjs')
 
 // 留言数据
 export const cardData = Mock.mock({
-    "data|13": [{
+    "data|59": [{
         "date_value": new Date(),
         "id": 1,
         "user_id|+1": 10,

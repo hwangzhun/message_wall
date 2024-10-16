@@ -40,23 +40,23 @@ const handleResize = () => {
     if (windowWidth.value <= smallMobile) {
         buttonSize.value = 'ext-small';
         buttonColor.value = 'primary-main';
-        console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' smallMobile')
+        // console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' smallMobile')
     } else if (windowWidth.value > smallMobile && windowWidth.value <= mobile) {
         buttonSize.value = 'small';
         buttonColor.value = 'primary-main';
-        console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' Mobile')
+        // console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' Mobile')
     } else if (windowWidth.value > mobile && windowWidth.value <= tablet) {
         buttonSize.value = 'base';
         buttonColor.value = 'primary-main';
-        console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' tablet')
+        // console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' tablet')
     } else if (windowWidth.value > tablet && windowWidth.value <= pad) {
         buttonSize.value = 'base';
         buttonColor.value = 'primary-main';
-        console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' pad')
+        // console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' pad')
     } else if (windowWidth.value > pad && windowWidth.value <= desktop) {
         buttonSize.value = 'base';
         buttonColor.value = 'primary-main';
-        console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' desktop')
+        // console.log('当前视口宽度: ' + window.innerWidth + 'px' + ' desktop')
     } else {
         buttonSize.value = 'base';
         buttonColor.value = 'primary-main';

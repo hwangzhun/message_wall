@@ -15,7 +15,7 @@
           <span class="message-num">34</span>
       </div>
       <div class="name">
-        <span>hahahah</span>
+        <span>白居易</span>
       </div>
     </div>
   </div>
@@ -46,34 +46,36 @@ const props = defineProps({
 .main{
   height: 240px;
   background-color: @primary-color;
-  padding: 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column; 
+  cursor: pointer;
 }
 
 .card-top{
   display: flex;
   justify-content: space-between;
+  margin-bottom: @space-16;
   color: @gray-7;
 }
 
 .card-message {
   height: 140px;
   flex-grow: 1;
-  margin-top: @space-8;
 }
 
 .card-message p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: @gray-12;
   text-align: left;
+  letter-spacing: 0.2rem;
+  font-family: hyppt;
 }
 
 .card-footer {
   display: flex;
   justify-content: space-between;
-  // margin-top: auto;
 }
 
 .interactive {
@@ -85,7 +87,7 @@ const props = defineProps({
 
 .interactive span {
   margin-right: @space-4;
-
+  align-items: center;
 }
 
 .bxs-like {
@@ -100,6 +102,8 @@ const props = defineProps({
 
 .name {
   color: @gray-11;
+  font-size: 1.25rem;
+  font-family: hyppt;
 }
 
 </style>

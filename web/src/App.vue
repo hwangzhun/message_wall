@@ -1,7 +1,7 @@
 <template>
   <router-view></router-view>
   <div>
-    <p>app.vue</p>
+    <!-- <p>app.vue</p> -->
   </div>
 </template>
 
